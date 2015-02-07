@@ -17,9 +17,18 @@
 <script type="text/javascript">
 $('#submit-button').click(function() {
 	var username=$('#username-text').val();
-        var password=$('#password-text')
-var greeting="Thank you, "+username+" for creating an account!";
-alert(greeting);
+        var password=$('#password-text').val();
+ if (username=="") {
+   alert('Please type a username');
+}
+else if (password=="") {
+   alert('Please type a password');
+
+}
+else {
+  var greeting="Thank you, "+username+" for creating an account!";
+  alert(greeting);
+}
 });
 </script>
 
